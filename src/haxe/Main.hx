@@ -13,6 +13,8 @@ class Main {
 	public static function main():Void {
 
 		Question.init();
+		Result.init();
+
 		new JQuery('document').ready(init);
 		
 	}
@@ -22,7 +24,7 @@ class Main {
 	========================================================================== */
 	private static function init(event:Event):Void {
 
-		View.init(Question.getList(8));
+		View.init(Question.getList(10));
 		
 	}
 
